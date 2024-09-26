@@ -46,7 +46,6 @@ a:hover {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
 }
 
 nav {
@@ -56,9 +55,11 @@ nav {
   padding: 1em 0;
 }
 
-li:first-child {
+ul li:first-child {
   color: #5050f2;
   font-weight: bold;
+  font-size: 1.15em;
+  padding-bottom: .25em;
 }
 
 li:last-child {

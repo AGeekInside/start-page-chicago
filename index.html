@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-  <video autoplay muted loop id="my_video">
+  <!-- <video autoplay muted loop id="my_video">
     <source src="chicago.mp4" type="video/mp4">
+  </video> -->
+
+    <video autoplay muted loop id="my_video">
+    <!-- <source src="chicago.mp4" type="video/mp4"> -->
+    <!-- <source src="movies/warcraft-story.mp4" type="video/mp4"> -->
   </video>
+
+<script type="text/javascript">
+  var node = document.getElementById("my_video");
+  var source = document.createElement('source');
+  var totalCount = 11;
+  var num = Math.ceil(Math.random() * totalCount);
+  moviesSrc = "movies/"+num+".mp4"
+
+  source.src = moviesSrc
+  source.type = "video/mp4"
+
+  node.appendChild(source)
+</script>
+
 
     <head>
       <link rel="stylesheet" href="style.css">
@@ -12,65 +31,76 @@
     <body>   
       <nav>
         <ul>
-          <li>news</li>
-          <li><a href="https://ft.com">financial times</a></li>
-          <li><a href="https://nytimes.com">ny times</a></li>
-          <li><a href="https://washingtonpost.com">washington post</a></li>
+          <li>homelab</li>
+          <li><a href="https://jit.marcb.dev/dozzle">dozzle</a></li>
+          <li><a href="https://kavita.marcb.dev">kavita</a></li>
+          <li><a href="https://komga.marcb.dev">komga</a></li>
+          <li><a href="https://kuma.marcb.dev">kuma</a></li>
+          <li><a href="http://omv.internal/#/">omv</a></li>
+          <li><a href="http://pi.hole">pihole</a></li>
+          <li><a href="https://paperless.marcb.dev">paperless</a></li>
+          <li><a href="https://jit.marcb.dev/port">portainer</a></li>
+          <li><a href="https://proxmox.internal">proxmox</a></li>
+          <li><a href="https://speed.marcb.dev">speed</a></li>
+          <li><a href="https://jit.marcb.dev/">url shortener</a></li>
         </ul>
-        <ul>
-          <li>reddit</li>
-          <li><a href="https://www.reddit.com/r/proxmox">r/proxmox</a></li>
-          <li><a href="https://www.reddit.com/r/selfhosted">r/selfhosted</a></li>
-        </ul>
-        <ul>
+	<ul>
+          <li>tech</li>
+          <li><a href="https://portal.azure.com">azure</a></li>
+          <li><a href="https://freshrss.marcb.dev">freshrss</a></li>
           <li><a href="https://github.com">github</a></li>
           <li><a href="https://news.ycombinator.com/">hacker news</a></li>
-        </ul>
-        
+          <li><a href="https://onedrive.live.com/?id=root&cid=E-1BF677189BDAE27&qt=mru">onedrive</a></li>
+          <li><a href="https://github.com/awesome-selfhosted/awesome-selfhosted?tab=readme-ov-file">selfhosted list</a></li>
+          <li><a href="https://www.reddit.com/r/proxmox">r/proxmox</a></li>
+          <li><a href="https://www.reddit.com/r/selfhosted">r/selfhosted</a></li>
+          <li><a href="https://login.tailscale.com/admin/machines">tailscale</a></li>
+	</ul>
         <ul>
-          <li>homelab</li>
-          <li><a href="https://portal.azure.com">azure</a></li>
-          <li><a href="https://proxmox.internal">proxmox</a></li>
-          <li><a href="http://pi.hole">pihole</a></li>
+          <li>household</li>
+          <li><a href="http://amazon.com">amazon</a></li>
+          <li><a href="http://fidelity.com">fidelity</a></li>
+          <li><a href="https://jit.marcb.dev/nw">nw sheet</a></li>
+          <li><a href="https://www.office.com/?auth=1">office.com</a></li>
+          <li><a href="http://forecast.weather.gov/MapClick.php?CityName=Vienna&state=VA&site=LWX&lat=38.9004&lon=-77.2602">weather</a></li>
+          <li><a href="https://jit.marcb.dev/wlj">wlj</a></li>
         </ul>
-   
+        <ul>
+          <li>reading</li>
+          <li><a href="https://ft.com">financial times</a></li>
+          <li><a href="https://kobo.com">kobo</a></li>
+          <li><a href="https://nytimes.com">ny times</a></li>
+          <li><a href="https://reddit.com">reddit</a></li>
+          <li><a href="https://washingtonpost.com">washington post</a></li>
+        </ul>
         <ul>
           <li>social</li>
           <li><a href="https://www.facebook.com">facebook</a></li>
           <li><a href="https://gmail.com">gmail</a></li>
           <li><a href="https://www.linkedin.com">linkedin</a></li>
-          <li><a href="https://app.slack.com/client/T0RJ5ALGZ/">online cove</a></li>
+          <li><a href="https://app.slack.com/client/T-1RJ5ALGZ/">online cove</a></li>
           <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
         </ul>
         <ul>
           <li>media</li>
           <li><a href="https://www.netflix.com">netflix</a></li>
           <li><a href="https://www.youtube.com">youtube</a></li>
+          <li><a href="https://music.youtube.com/">yt music</a></il>
         </ul>
         <ul>
-          <li>rpg</li>
+          <li>gaming</li>
           <li><a href="https://www.dndbeyond.com/">dnd beyond</a></li>
           <li><a href="https://foundry.datanonsense.com/">foundry</a></li>
           <li><a href="https://roll20.net">roll20</a></li>
         </ul>
         <ul>
           <li>wow</li>
-          <li><a href="https://www.reddit.com/r/CompetitiveWoW/">r/competitvewow</a></li>
+          <li><a href="https://www.icy-veins.com/wow/frost-mage-pve-dps-guide">iv frost mage</a></li>
+          <li><a href="https://www.icy-veins.com">icy-veins</a></li>
+          <li><a href="https://www.reddit.com/r/CompetitiveWoW/">r/competitivewow</a></li>
           <li><a href="https://www.reddit.com/r/wow/">r/wow</a></li>
-        </ul>
-        <ul>
-          <li>search</li>
-          <li><a href="https://www.bing.com/">bing</a></li>
-          <li><a href="https://www.google.com/">google</a></li>
-        </ul>
-        <ul>
-          <li>finance</li>
-          <li><a href="http://fidelity.com">fidelity</a></li>
-        </ul>
-        <ul>
-          <li>misc</li>
-          <li><a href="http://forecast.weather.gov/MapClick.php?CityName=Vienna&state=VA&site=LWX&lat=38.9004&lon=-77.2602">weather</a></li>
+          <li><a href="https://www.wowhead.com">wowhead</a></li>
         </ul>
       </nav>    
-    </body>
+  </body>
   </html>
